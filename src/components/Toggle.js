@@ -13,7 +13,7 @@ function Toggle() {
   const color = isOn ? "red" : "white"
 
   return (
-      <button style={{ background: color }} onClick={handleClick}>
+      <button style={{ background: color }} onClick={handleClick}> {/*reusing to isOn state, and conditionally rendering*/}
         {isOn ? "ON" : "OFF"}
       </button>
   );
